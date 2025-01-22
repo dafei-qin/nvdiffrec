@@ -23,6 +23,8 @@ from .dataset import Dataset
 ###############################################################################
 
 def _load_img(path):
+    if path.endswith('.png'):
+        path = path.replace('.png', '')
     files = glob.glob(path + '.*')
     assert len(files) > 0, "Tried to find image file for: %s, but found 0 files" % (path)
     img = util.load_image_raw(files[0])
