@@ -1,0 +1,17 @@
+{
+    "ref_mesh": "data/f88748f2-e53d-46bb-9141-b45b5f772fa5_aft_lounge_4k",
+    "random_textures": true,
+    "iter": 5000,
+    "save_interval": 100,
+    "texture_res": [ 2048, 2048 ],
+    "train_res": [1280, 1280],
+    "batch": 8,
+    "learning_rate": [0.03, 0.01],
+    "ks_min" : [0, 0.08, 0.0],
+    "dmtet_grid" : 128,
+    "mesh_scale" : 2.1,
+    "laplace_scale" : 3000,
+    "display": [{"latlong" : true}, {"bsdf" : "kd"}, {"bsdf" : "ks"}, {"bsdf" : "normal"}],
+    "background" : "black",
+    "out_dir": "f88748f2-e53d-46bb-9141-b45b5f772fa5_aft_lounge_4k"
+}
